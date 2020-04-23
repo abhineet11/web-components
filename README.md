@@ -1,4 +1,6 @@
-What is Web component 1. Custom HTML Element - Register your own HTML tags 2. Shadow Dom - Manage a seperate DOM node tree for your HTML elements 3. Template & slot
+What is Web component 
+1. Custom HTML Element - Register your own HTML tags 
+2. Shadow Dom - Manage a seperate DOM node tree for your HTML elements 3. Template & slot
 
 Why Web component
 

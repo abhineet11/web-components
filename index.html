@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="tooltip.js"></script>
+    <script src="modal.js"></script>
+</head>
+<style>
+    html {
+        --color-primary: #a4fcda;
+    }
+    .highlight{
+        color: red;
+    }
+</style>
+<body>
+    <template id="tooltip-template">
+       
+    </template>
+    <div>
+        <div>
+            <am-tooltip class="custom-style" text="this is web component">
+                <a>any question</a>
+            </am-tooltip>
+        </div>
+    </div> 
+    <am-tooltip  text="this is web component">
+        <a class="highlight">any question</a>
+    </am-tooltip>
+    <am-modal>
+        <h1 slot="title">please confirm</h1>
+        <p slot="body">with your confirmation</p>
+    </am-modal>
+    <button id="click-button">click me</button>
+</body>
+<script>
+    const modal = document.querySelector('am-modal')
+    const click = document.getElementById('click-button');
+    click.addEventListener('click', function(){
+       // document.querySelector('am-modal').setAttribute('opened', '')
+        modal.open()
+   })
+</script>
+</html>
